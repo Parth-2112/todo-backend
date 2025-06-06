@@ -16,7 +16,7 @@ export const app = express();
 app.use(express.json());// middleware to parse JSON request bodies
 app.use(cookieParser()); // middleware to parse cookies
 app.use(cors({
-    origin: [process.env.Frontend_URL],
+    origin: [process.env.FRONTEND_URL],
     methods: ['GET', 'POST', 'PUT', 'DELETE'],
     credentials: true // Allow cookies to be sent with requests // allows headers to be sent to frontend 
 }));
