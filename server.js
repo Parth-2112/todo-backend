@@ -4,7 +4,7 @@ import { connectDB } from './data/database.js'; // Assuming you have a database 
 connectDB(); // Connect to the database
 // console.log(process.env.PORT);
 app.listen(process.env.PORT, () => {
-    console.log(process.env.FRONTEND_URL)
+    // console.log(process.env.FRONTEND_URL);
     console.log(`Server is running on port ${process.env.PORT} in ${process.env.NODE_ENV} mode`);
 });
   
