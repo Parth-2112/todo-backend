@@ -92,7 +92,6 @@ export const getMyProfile = (req, res) => {
 //    const decodedToken = jwt.verify(token, process.env.JWT_SECRET);
 
 //    const user = await User.findById(decodedToken._id);
-
     res.status(200).json({
         success: true,
         user: req.user,

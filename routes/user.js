@@ -11,7 +11,6 @@ router.post('/login', login);
 router.get('/logout', logout);
 router.get('/me', isAuthenticated, getMyProfile);
 
-
 // router.get('/userid/special', specialUser);    
 // creating three different routes for the same endpoint or we can just use the other method
 // router.route('/userid/:id')
