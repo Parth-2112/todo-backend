@@ -29,6 +29,7 @@ app.use("/api/v1/task", taskRouter); // Registering the task router
 
 app.get('/', (req, res) => {
     res.send('Hello, World!');
+    console.log(process.env.FRONTEND_URL);
 });
 
 app.use(errorMiddleware);
